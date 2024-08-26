@@ -4,7 +4,6 @@ import Muix from "./Muix";
 import Ag from "./Ag";
 import Rdg from "./Rdg";
 import Tabulator from "./Tabulator";
-import Kendo from "./Kendo";
 
 const App = () => {
   const [selectedComponent, setSelectedComponent] = useState<string | null>(null);
@@ -19,8 +18,6 @@ const App = () => {
         return <Rdg />;
       case "Tabulator":
         return <Tabulator />;
-      case "Kendo":
-        return <Kendo />;
       default:
         return null;
     }
